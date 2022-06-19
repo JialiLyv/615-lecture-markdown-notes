@@ -1,34 +1,34 @@
-#week1
+# week1
 
-##What is Data Science?
+## What is Data Science?
 Learning about the world from data using computation
 
-###Exploration
+### Exploration
 * Identifying patterns in data 
 * Uses visualizations
 
-###Inference
+### Inference
 - Using data to draw reliable conclusions about the world 
 - Uses statistics
 
-###Prediction
+### Prediction
 - Making informed guesses about unobserved data
 - Uses machine learning
 
-#week2
-##Types of ==Attributes==
-###There are different types of attributes 
-####Nominal
+# week2
+### Types of ==Attributes==
+### There are different types of attributes 
+#### Nominal
 - Examples: ID numbers, eye color, zip codes 
 
-####Ordinal
+####  Ordinal
 - Examples: rankings (e.g., taste of potato chips on a scale from 1-10), grades, height in {tall, medium, short}
 
-####Interval
+#### Interval
 - Examples: calendar dates, temperatures in Celsius or
 Fahrenheit.
 
-####Ratio
+#### Ratio
 - Examples: temperature in Kelvin, length, time, counts
 
 | Attribute Type | Description | Examples | Operations
@@ -38,70 +38,70 @@ Fahrenheit.
 | Interval | For interval attributes, the differences between values are meaningful, i.e., a unit of measurement exists.(+, - ) | calendar dates, temperature in Celsius or Fahrenheit | mean, standard deviation, Pearson's correlation, t and F tests 
 | Ratio | For ratio variables, both differences and ratios are meaningful. (*, /) | temperature in Kelvin, monetary quantities, counts, age, mass, length, electrical current | geometric mean, harmonic mean, percent variation 
 
-###Types of ==data sets==
-####Record
+### Types of ==data sets==
+#### Record
 - Data Matrix
 - Document Data
 - Transaction Data
 
-####Graph
+#### Graph
 - World Wide Web
 - Molecular Structures 
 
-####Ordered
+#### Ordered
 - Spatial Data
 - Temporal Data
 - Sequential Data
 - Genetic Sequence Data
 
-###Important Characteristics of ==Structured Data==
-####Dimensionality
+### Important Characteristics of ==Structured Data==
+#### Dimensionality
 ◆ Number of attributes each object is
 described with
 
 ◆ Challenge: high dimensionality (curse of dimensionality)
-####Sparsity 
+#### Sparsity 
 ◆ Only presence counts
-#####Resolution
+#### #Resolution
 ◆ Patterns depend on the scale
 
-###Examples of data quality problems: 
+### Examples of data quality problems: 
 - noise and outliers
 - missing values
 - duplicate data
 
 ## Why Is Data ==Dirty==?
-###Incomplete data may come from
+### Incomplete data may come from
 -“Not applicable” data value when collected
 
 -Different considerations between the time when the data was collected and when it is analyzed.
 
 -Human/hardware/software problems
-###Noisy data (incorrect values) may come from
+### Noisy data (incorrect values) may come from
 -Faulty data collection instruments
 
 -Human or computer error at data entry
 
 -Errors in data transmission
-###Inconsistent data may come from
+### Inconsistent data may come from
 -Different data sources
 
 -Functional dependency violation (e.g., modify some linked data)
-###Duplicate records also need data cleaning
+### Duplicate records also need data cleaning
 
-##Measures of Location: Mean and Median
+## Measures of Location: Mean and Median
 
 - The mean is the most common measure of the location of a set of points. 
 - However, the mean is very sensitive to outliers.
 - Thus, the median or a trimmed mean is also commonly used.
 
-##Measures of Spread: Range and Variance
+## Measures of Spread: Range and Variance
 - Range is the difference between the max and min
 - The variance or standard deviation is the most common measure of the
 spread of a set of points.
 - However, this is also sensitive to outliers, so that other measures are often used.
 
-##Visualization Techniques: Histograms
+## Visualization Techniques: Histograms
 ### Histogram
 - Usually shows the distribution of values of a single variable
 - Divide the values into bins and show a bar plot of the number of objects in each bin.
@@ -132,7 +132,7 @@ summarize the relationships of several pairs of attributes
 - Plots of similarity or distance matrices can also be useful for visualizing the relationships between objects
 
 ### Visualization Techniques: ==Parallel Coordinates==
-####Parallel Coordinates
+#### Parallel Coordinates
 - Used to plot the attribute values of high-dimensional data
 - Instead of using perpendicular axes, use a set of parallel axes
 - The attribute values of each object are plotted as a point on each corresponding coordinate axis and the points are connected by a line
@@ -141,7 +141,7 @@ summarize the relationships of several pairs of attributes
 for some attributes
 - Ordering of attributes is important in seeing such groupings
 
-#week3
+# week3
 ## Distributions
 ### Probability Distribution
 * Random quantity with various possible values
@@ -178,9 +178,9 @@ the statistic based on each sample
 * Good approximation to the probability distribution of the statistic
 	* if the number of repetitions in the simulation is large
 
-#week4
-##Correlation Coefficient
-###The Correlation Coefficient r
+# week4
+## Correlation Coefficient
+### The Correlation Coefficient r
 Measures how clustered the scatter is around a straight line
 
 - Measures linear association 
@@ -195,7 +195,7 @@ Correlation r
 - r=0
 - Correlation measures only one kind of association - linear
 
-###Linear Regression
+### Linear Regression
 A statement about x and y pairs
 
 - Measured in standard units
@@ -215,8 +215,8 @@ To find the regression estimate of y:
 	- It’s in standard units
 	- So convert it back to the original units of y
 
-#week5
-##Error in Estimation
+# week5
+## Error in Estimation
 
 - error = actual value − estimate
 - Typically, some errors are positive and some negative
@@ -234,7 +234,7 @@ using the line “estimate = ax + b”,
 	- then minimize(mse)returnsarray[a0,b0]
 	- a0 is the slope and b0 the intercept of the line that minimizes the mse among lines with arbitrary slope a and arbitrary intercept b (that is, among all lines)
 
-##Least Squares Line
+## Least Squares Line
 
 - Minimizes the root mean squared error (rmse) among all lines
 - Equivalently, minimizes the mean squared error (mse) among all lines
@@ -243,8 +243,8 @@ using the line “estimate = ax + b”,
 	- Least squares line
 	- Regression line
 
-#week6
-##Review: Residuals
+# week6
+## Review: Residuals
 - Error in regression estimate
 - One residual corresponding to each point (x, y)
 - residual = observed y - regression estimate of y
@@ -269,9 +269,9 @@ Residuals from a linear regression always have
 - Just like deviations from mean are zero on average
 
 ==_Note_: Whether or not a linear association governs the data set, the sum of the residuals (errors) for the best-fit line (or curve) is zero-always!==
-#week7
-##Discussion Questions
-###How would we adjust our regression line...
+# week7
+## Discussion Questions
+### How would we adjust our regression line...
 - if the average residual were 10?
 	- ==Raise the line(Shift up) by 10 units==
 - if the residuals were positively correlated with x?
@@ -279,40 +279,40 @@ Residuals from a linear regression always have
 - if the residuals were above 0 in the middle and below 0 on the left and right?
 	- ==Nothing==
 
-##A Measure of Clustering
-###Correlation, Revisited
+## A Measure of Clustering
+### Correlation, Revisited
 - From previous lectures, “The correlation coefficient measures how clustered the points are around a straight line.”
 - We can now quantify this statement.
 
 
-###Variance of Fitted Values
-###A Variance Decomposition
-###Interpretation
+### Variance of Fitted Values
+### A Variance Decomposition
+### Interpretation
 - If r is close to +_1, then x has good predictive value, b/c variance of
 the residuals is tiny compared to that of y
 - Ifriscloseto0,thenxdoesnothavegoodpredictivevalue,b/cthe ration of variances of close to 1. May as well use uninformed prediction
 
-###Multiple Regression
+### Multiple Regression
 - Simple Linear Regression
 	- Use one independent variable estimate the dependent variable
 - Multiple Linear Regression
 	- Use multiple independent variable estimate the dependent variable
 
-###Multiple Regression
+### Multiple Regression
 - Can include multiple variables
 - Goal is to estimate one variable using several other
 variables
 - Used in empirical social research, market research, etc. to find out what influence different factors have on certain variable
 
-###Assumptions
+### Assumptions
 - Must be linear relationship between the dependent and independent variables
 - Normally distributed error (Residual) 
 - No Multicollinearity
 - Homoscedasticity
 	- The variance of the residuals must be constant across predicted variables
 
-#week8
-##Prediction Problems
+# week8
+## Prediction Problems
 ### Classification
 - predicts categorical class labels (discrete or nominal)
 - classifies data (constructs a model) based on the training set and the values (class labels) in a classifying attribute and uses it in classifying new data
@@ -340,7 +340,7 @@ variables
 - A test set is used to determine the accuracy of the model.
 - Usually, the given data set is divided into training and test sets, with training set used to build the model and test set used to validate it.
 
-##Decision Tree Induction
+## Decision Tree Induction
 ### Many Algorithms:
 - Hunt’s Algorithm (one of the earliest) - CART
 - ID3, C4.5
@@ -357,17 +357,17 @@ optimizes certain criterion.
 	- Determine when to stop splitting
 
 ### How to Specify Test Condition?
-#### Depends on attribute types 
+####  Depends on attribute types 
 - Nominal
 - Ordinal
 - Continuous
 
-#### Depends on number of ways to split
+####  Depends on number of ways to split
 - 2-way split
 - Multi-way split
 
 ### Splitting Based on Continuous Attributes
-#### Different ways of handling
+####  Different ways of handling
 - ==Discretization== to form an ordinal categorical attribute
 	- Static – discretize once at the beginning
 	- Dynamic – ranges can be found by equal interval bucketing, equal frequency bucketing
@@ -376,7 +376,7 @@ optimizes certain criterion.
 	- consider all possible splits and finds the best cut
 	- [x] can be more computationally intensive
 
-#week9
+# week9
 ## Model Evaluation
 - Metrics for Performance Evaluation
 	- How to evaluate the performance of a model?
@@ -385,12 +385,12 @@ optimizes certain criterion.
 - Methods for Model Comparison
 	- How to compare the relative performance among competing models?
 
-##Why Evaluate?
+## Why Evaluate?
 - Multiple methods are available to classify or predict
 - For each method, multiple choices are available for settings
 - To choose best model, need to assess each model’s performance
 
-##Misclassification error
+## Misclassification error
 - Error = classifying a record as belonging to one class when it
 belongs to another class.
 - Error rate = percent of misclassified records out of the total records in the validation data
@@ -422,13 +422,13 @@ If multiple classes,
 (sum of misclassified records)/(total records)
 
 (b+c)/(a+b+c+d)
-##Limitation of Accuracy
+## Limitation of Accuracy
 * Consider a 2-class problem
 	* Number of Class 0 examples = 9990
 	* Number of Class 1 examples = 10
 * If model predicts everything to be class 0, accuracy is 9990/10000 = 99.9 %
 	* Accuracy is misleading because model does not detect any class 1 example
-##Main Metrics
+## Main Metrics
 
 **Accuracy**: the ratio of correctly classified (TP+TN) to the total number samples
 
@@ -445,20 +445,20 @@ If multiple classes,
 **F1 score** is also known as the **F Measure**. 
 The F1 score states the equilibrium between the precision and the recall.
 
-##Methods for Performance Evaluation
+## Methods for Performance Evaluation
 - How to obtain a reliable estimate of performance?
 - Performance of a model may depend on other factors besides the learning algorithm:
 	- Class distribution
 	- Cost of misclassification
 	- Size of training and test sets
 
-###Learning Curve
+### Learning Curve
 - Learning curve shows how accuracy changes with varying sample size
 - Effect of small sample size: 
 	- Bias in the estimate
 	- Variance of estimate
 
-###Methods of Estimation
+### Methods of Estimation
 - Holdout
 	- Reserve 2/3 for training and 1/3 for testing
 - Random subsampling 
@@ -481,7 +481,7 @@ The F1 score states the equilibrium between the precision and the recall.
 	- How much confidence can we place on accuracy of M1 and M2?
 - Can the difference in performance measure be explained as a result of random fluctuations in the test set?
 
-##Comparing Performance of 2 Models
+## Comparing Performance of 2 Models
 - Given two models, say M1 and M2, which is better?
 	- M1 is tested on D1 (size=n1), found error rate = e1
 	- M2 is tested on D2 (size=n2), found error rate = e2
@@ -496,14 +496,14 @@ The F1 score states the equilibrium between the precision and the recall.
 	- Since D1 and D2 are independent, their variance adds up:
 [Model evaluation, model selection ](https://sebastianraschka.com/blog/2018/model-evaluation-selection-part4.html)
 
-##Decision Tree Classification
-##Underfitting and Overfitting
+## Decision Tree Classification
+## Underfitting and Overfitting
 - Two problems that can arise with models developed with Data Mining are: ==Overfitting== and Underfitting
 - ==Underfitting== occurs when the model has not fully learned all the patterns in the data, resulting in poor prediction accuracy (test accuracy).
 - ==Underfitting== is generally caused by the inability of the algorithm to find all patterns in the training dataset.
 - In the case of a Decision Tree method the tree developed is not of sufficient depth and size to learn all the patterns present in the data
 
-##Overfitting
+## Overfitting
 - With ==Overfitting== the model’s learns the patterns in the training data very well but the model learnt cannot predict newly arriving data well
 - In other words, accuracy on training dataset is high but accuracy drops drastically on newly arriving data – training set accuracy >> test set accuracy
 - In the case of the Decision tree method the tree developed is too detailed (too large in size)
@@ -512,20 +512,20 @@ The F1 score states the equilibrium between the precision and the recall.
 dataset
 	2. Lack of sufficient data to capture certain types of patterns
 
-###Overfitting due to Noise
+### Overfitting due to Noise
 Decision boundary is distorted by noise point
 
-###Overfitting due to Insufficient Examples
+### Overfitting due to Insufficient Examples
 Lack of data points in the lower half of the diagram makes it difficult to predict correctly the class labels of that region
 
 - Insufficient number of training records in the region causes the decision tree to predict the test examples using other training records that are irrelevant to the classification task
 
-##Notes on Overfitting
+## Notes on Overfitting
 - Overfitting results in decision trees that are more complex than necessary
 - Training error no longer provides a good estimate of how well the tree will perform on previously unseen records
 - Need new ways for estimating errors
 
-##Methods for estimating the error
+## Methods for estimating the error
 - ==Re-substitution errors:== error on training (Σ e(t) )
 - ==Generalization errors:== error on testing (Σ e’(t))
 - Methods for estimating generalization errors:
@@ -539,20 +539,20 @@ Lack of data points in the lower half of the diagram makes it difficult to predi
 - ==Reduced error pruning (REP)==:
 	- uses== validation data set== to estimate generalization error
 
-##How to Address Overfitting...
+## How to Address Overfitting...
 - Post-pruning
 	- Grow decision tree to its entirety
 	- Trim the nodes of the decision tree in a bottom-up fashion
 	- If generalization error improves after trimming, replace sub-tree by a leaf node.
 	- Class label of leaf node is determined from majority class of instances in the sub-tree
 
-##Occam’s Razor
+## Occam’s Razor
 - Given two models of similar generalization errors, one should prefer the simpler model over the more complex model
 - For complex models, there is a greater chance that it was fitted accidentally by errors in data
 - Therefore, one should include model complexity when evaluating a model
 
-#week10
-##Neural Networks
+# week10
+## Neural Networks
 - Biologically inspired family of algorithms that is inspired by the human brain
 - Neural Networks are used for classification, clustering and numeric prediction tasks.
 - Most popular types are
@@ -562,33 +562,33 @@ Lack of data points in the lower half of the diagram makes it difficult to predi
 - Convolutional Neural Network (CNN)used for image classification
 - Long Short Term Memory (LSTM) used for modelling time series
 
-###Artificial Neural Networks (ANN)
+### Artificial Neural Networks (ANN)
 - Model is an assembly of inter-connected nodes and weighted links
 - Output node sums up each of its input value according to the weights of its links
 - Compare output node against some threshold t
 
-###Limitations of Simple Perceptron
+### Limitations of Simple Perceptron
 - Simple perceptron can be used to classify problems which are linearly separable
 - For such problems a single line can be drawn which separates the two classes with zero (or near zero) error
 
 - However simple perceptrons cannot solve non linear classification problems such as the XOR problem
 - These types of problems can only be solved by adding another layer (called the hidden layer) of neurons to the network
 
-###Solving the Logical XNOR Problem
+### Solving the Logical XNOR Problem
 - The XNOR problem is more difficult than the logical AND problem.
 - It cannot be solved by a single neuron as it is a 2 stage process
 - (X1 XNOR X2) = a1 OR a2 where a1=(X1 AND X2) and a2=(NOT X1 AND NOT X2)
 - This can be seen from the following truth table
 
-###Neural Net for Solving the Logical XNOR Problem
+### Neural Net for Solving the Logical XNOR Problem
 - a1 and a2 can be computed in parallel and so 2 neurons can be assigned to do the computation in the hidden (intermediate layer).
 
-###General Structure of ANN
+### General Structure of ANN
 
-###Solving classification problems with Softmax
+### Solving classification problems with Softmax
 - Classification problems involving more than two classes are solved through the Softmax function which is implemented as an additional layer
 
-###General Algorithm for learning ANN
+### General Algorithm for learning ANN
 
 - Initialize the weights (w0, w1, ..., wk)
 - Compute the error at each output node (k), and the hidden node (j) connected to it.
@@ -597,25 +597,25 @@ Lack of data points in the lower half of the diagram makes it difficult to predi
 	r = learning rate parameter (0<r<1) Error(k) = the computed error at node k
 	O = output of node j
 
-###Algorithm for learning ANN
+### Algorithm for learning ANN
 - Thus it can be seen that the observed errors are used to
 adjust the weights so that the overall error is minimized
 - For example if the desired output at node k is 1 and the actual output is 1.2, then the error = (1-1.2) = -0.2, so we need to decrease the weight of all incoming links starting from all nodes (e.g. j1, j2) that feed into node k
 - The weight adjustment process is done iteratively until the error is below some specified threshold – this will involve scanning the data many times over
 
-###The Loss function in Backpropagation Learning
-###Backpropagation learning
+### The Loss function in Backpropagation Learning
+### Backpropagation learning
 - A rigorous derivation of the weight update expression using the method of
 gradient descent available from: Backprop Algorithm
 - Gradient descent is a commonly used for minimizing a function
 
-###Major Parameters for Multi Layer Perceptrons
+### Major Parameters for Multi Layer Perceptrons
 1. ==Learning rate== – this determines the size of the “steps taken” in the weight adjustment process – larger steps means learning takes place quicker but accuracy may suffer
 2. ==Number of epochs== – the number of times that the training dataset is scanned – larger the value the more accurate the model (generally 100 or more)
 3. The number of hidden neurons used – generally chosen as (attributes+classes)/2
 4. ==Momentum== – some implementations add a term called the momentum to the current weight – this is a small fraction of the update value from the previous iteration; the momentum makes the learning process smoother
 
-###Neural Networks - Strengths
+### Neural Networks - Strengths
 NON-LINEARITY
 
 - It can model non-linear systems
@@ -634,25 +634,25 @@ EVIDENTIAL RESPONSE
 - Have consistently good accuracy rates across several domains
 - Can be used for both supervised (classification and numeric prediction) as well as unsupervised learning
 
-###Neural Networks - Weaknesses
+### Neural Networks - Weaknesses
 
 - Lack the ability to explain their behaviour (unlike Decision Trees and Naïve Bayes)
 - In some cases, overtraining can cause over fitting
 - With large datasets training time can be large – very much larger than the Decision Tree and Naïve Bayes methods
 
-###Overfitting with MLP
+### Overfitting with MLP
 
 - With the Diabetes dataset: with number of neurons set to 300, Python produced 79% accuracy on the training segment and 71% accuracy on the test segment
 - With number of neurons set to 100, Python produced 76% accuracy on both training and test segments
 - This shows overfitting is taking place when the number of hidden neurons is high – in this case an accurate model is learn on existing data but the model cannot predict very well on new data that is arriving
 
-###Neural Network Applications
+### Neural Network Applications
 - In general can be used for classification as well as for numeric prediction
 - For classification has been used for recognizing both printed and handwritten digits
 - For numeric prediction has been used for forecasting time series such as weather data (temperature, pressure, wind speed, etc), stock market prices, etc.
 
-#week11
-##What is feature selection?
+# week11
+## What is feature selection?
 Reducing the feature space by removing some of the (non-relevant) features.
 Also known as:
 
@@ -661,7 +661,7 @@ Also known as:
 - attribute selection
 - variable subset selection
 
-##Feature Extraction vs Feature Selection 
+## Feature Extraction vs Feature Selection 
 - Feature Extraction
 	- Generates new features based on the original dataset
 		- Principal Component Analysis (PCA)
@@ -671,7 +671,7 @@ Also known as:
 	- Select a subset of features among the set of all features
 	- Process of finding optimal set of features
 
-##Feature Selection Approaches
+## Feature Selection Approaches
 - Filter Methods
 
 Filtering approaches use a ranking or sorting algorithm to filter out those features that have less usefulness
@@ -694,27 +694,27 @@ Also known as ==single factor== analysis
 - ANOVA F-value (Quantitative variables) 
 - Chi Square test (Categorical variables)
 
-##Chi Square Feature Selection
+## Chi Square Feature Selection
 Uses the chi square test whether or not a variable (the predictor feature) is independent or not of the class feature
 
 Suppose we wish to find out whether vaccination has an effect on a particular form of pneumonia (health outcome is the class (target) variable
 
 We compute the chi square value for each cell under the assumption of independence
 
-##Wrapper Methods
+## Wrapper Methods
 - The predictive power of ==variable is evaluated Jointly ==
 - Set of variables that performs the best
 	- Subset Selection
 	- Forward Selection 
 	- Backward Selection
 	
-##Recursive Feature Extraction
+## Recursive Feature Extraction
 
 - This is Python’s implementation of multivariate feature selection with a classifier as a wrapper
 - Python does a greedy search through the feature space using ==backward elimination== as discussed in the lectures
 - The wrapper classifier is used to guide the search by providing the chose metric (classification accuracy, area under ROC, etc.) at each point in the search.
 
-##Forward Selection
+## Forward Selection
 1. In forward selection we start with ==an empty set A== of attributes
 2. At each step an attribute is added and a ==performance measure== is
 evaluated (for example ==Correlation map== or ==Information Gain==)
@@ -726,23 +726,23 @@ evaluated (for example ==Correlation map== or ==Information Gain==)
 
 7. The set A at the end of the process contains the set of non redundant attribute
 
-##Backward Elimination
+## Backward Elimination
 - Similar to forward selection but the set A initially consists of the **full set of attributes**.
 - At each step we eliminate (rather than add) the attribute that leads to the **highest Information Gain**.
 - The process is repeated at the iteration when every attribute that remains in **set A** leads to a **loss of Information Gain**.
 - The attributes that remain in **set A** contain the list of **non redundant attributes**.
 
-##Embedded Methods
+## Embedded Methods
 - Built-in variable selection methods
 - Regularisation –controls the value of parameters. **Less important** variable are given **lower weight** (close to zero)
 	- Lasso & Ridge regression
 
-##Principal Components Analysis (PCA)
+## Principal Components Analysis (PCA)
 - Finds a linear subspace (passing through the data mean) that results in the smallest (mean-square) error between the feature vectors and their projections in the data space.
 - PCA de-correlates feature data via rotation.
 - PCA seeks directions efficient for representation
 
-##PCA -Summary
+## PCA -Summary
 Advantages
 
 - Removes Correlated Features
