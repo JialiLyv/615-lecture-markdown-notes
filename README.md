@@ -269,7 +269,7 @@ Residuals from a linear regression always have
 - Just like deviations from mean are zero on average
 
 ==_Note_: Whether or not a linear association governs the data set, the sum of the residuals (errors) for the best-fit line (or curve) is zero-always!==
-# week7
+
 ## Discussion Questions
 ### How would we adjust our regression line...
 - if the average residual were 10?
@@ -283,7 +283,6 @@ Residuals from a linear regression always have
 ### Correlation, Revisited
 - From previous lectures, “The correlation coefficient measures how clustered the points are around a straight line.”
 - We can now quantify this statement.
-
 
 ### Variance of Fitted Values
 ### A Variance Decomposition
@@ -310,6 +309,66 @@ variables
 - No Multicollinearity
 - Homoscedasticity
 	- The variance of the residuals must be constant across predicted variables
+
+# week7
+
+## Machine Learning
+- Like human learning from past experiences.
+- A computer does not have “experiences”.
+- **A computer system learns from data**, which represent some “past experiences” of an application domain.
+- **Goal**: learn a **target function** that can be used to predict the values of a discrete class attribute, e.g., **approve** or **not-approved**, and** high-risk** or **low risk**.
+- The task is commonly called: Supervised learning, classification, or **inductive learning**.
+
+## Supervised vs. Unsupervised Learning
+### Supervised learning (classification)
+- Supervision: The training data (observations, measurements, etc.) are accompanied by labels indicating the class of the observations
+- New data is classified based on the training set
+
+
+### Unsupervised learning (clustering)
+- The class labels of training data is unknown
+- Given a set of measurements, observations, etc. with the aim of establishing the existence of classes or clusters in the data
+
+### K-Nearest Neighbours (KNN)
+- KNN is a Supervised Machine Learning Algorithm
+- KNN is a Nonlinear Learning Algorithm
+- Instance-based learning is often termed lazy learning, as there is typically no “transformation” of training instances into more general “statements”
+- Instead, the presented training data is simply stored and, when a new query instance is encountered, a set of similar, related instances is retrieved from memory and used to classify the new query instance
+
+### Nearest neighbor method
+#### Requires three things
+1. The set of stored records
+2. Distance Metric to compute distance between records
+3. The value of k, the number of nearest neighbors to retrieve
+
+
+#### To classify an unknown record:
+1. Compute distance to other training records
+2. Identify k nearest neighbors
+3. Use class labels of nearest neighbors to determine the class label of unknown record (e.g., by taking majority vote)
+
+
+### Nearest neighbor method
+-  Compute distance between two points:
+-  Determine the class from nearest neighbor list
+-  take the majority vote of class labels among the k-nearest neighbors
+-  Weigh the vote according to distance
+
+-   k-NN classifiers are lazy learners
+-   It does not build models explicitly
+-   Unlike eager learners such as decision tree induction and rule-based systems
+-   Classifying unknown records are relatively expensive
+
+-  k-NN classifiers are lazy learners
+-  It does not build models explicitly
+-  Unlike eager learners such as decision tree induction and rule-based systems
+-  Classifying unknown records are relatively expensive
+
+## Notes on Overfitting
+-  **Overfitting**: too much reliance on the training data
+-  **Underfitting**: a failure to learn the relationships in the training data
+-  Overfitting and underfitting cause poor **generalization** on the test set
+
 
 # week8
 ## Prediction Problems
